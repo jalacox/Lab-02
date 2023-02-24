@@ -42,4 +42,18 @@ if ( correctGuesses === 5 ) {
 mainElm.innerHTML = `
 <h1>You got ${correctGuesses} out of 5 words guessed correct.</h1>
 <H2>Badge earned: <u>{badge}</u></h2>
+
+
+
+<div class="row">
+  <div class="column">
+    <img src="img_snow.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
 `;
