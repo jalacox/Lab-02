@@ -1,2 +1,45 @@
+let correctGuesses = 0;
+let badge; 
 
 
+const mainElm = document.querySelector('main');
+
+
+
+const word1 = promt("Guess What is my favorite color?");
+if ( word1.toUpperCase() === "Yellow" ) {
+    correctGuesses += 1;
+}
+const word2 = prompt("Guess how old I am.");
+if ( word2.toUpperCase() === "24" ) {
+    correctGuesses += 1;
+}
+const word1 = promt("Guess My Favorite type of movie");
+if ( word3.toUpperCase() === "Invisible Man" ) {
+    correctGuesses += 1;
+}
+const word1 = promt("Guess What is my Favorite food");
+if ( word4.toUpperCase() === "Fruit" ) {
+    correctGuesses += 1;
+}
+const word1 = promt("Guess What Company I want to work for.");
+if ( word5.toUpperCase() === "Google" ) {
+    correctGuesses += 1;
+}
+
+
+if ( correctGuesses === 5 ) {
+    badge = "Diamond";
+} else if ( correctGuesses >= 3 ) {
+    badge = "Gold";
+} else if ( correctGuesses >= 1 ) {
+    badge = "Silver";
+} else {
+    badge = "None :)";
+}
+
+ 
+mainElm.innerHTML = `
+<h1>You got ${correctGuesses} out of 5 words guessed correct.</h1>
+<H2>Badge earned: <u>{badge}</u></h2>
+`;
