@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #fd38ab;
+  color: rgb(15, 15, 15);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Welcome to Jala's World!</h1>
+  <p>Hello 👋🏾 , here you will learn a little bit about me!
+    <sub> might be tested on things about me too. so read caerfully!</sub> and enjoy! 🫶🏾 
+  </p>
+  <p>Hello, my name is Jala Cox I am 24 years young. I was born and raised in Memphis,TN orange mound baby! My birthday is October 2, 1998 apart of the best zodiac sign which is libra gang ♎️. I am a entrepreneur and I have art business called JayWayCreates. I customize things like Clothes, Shoes, Rugs, Wood art/cutouts/wallart, Canvas Paintings, and Murals. I also do graphic art</p>
+</div>
+
+<h3 style="text-align: center;">TOP 10 Things I LOVE to do in my spare time!</h3>
+
+    <ul style=> 
+      <li>Creating art for my business</li>
+      <li>Listening to music</li>
+      <li>Cooking</li>
+      <li>Shopping for art supplies</li>
+      <li>Painting at the park</li>
+      <li>Recording/making Music</li>
+      <li>Sleeping</li>
+      <li>Traveling</li>
+      <li>Trying new resturants</li>
+      <li>Working out</li>
+    </ul>
+
+<h2 style="text-align:center">Quiz Time!!! 🤓🔥</h2>
+
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Jala Cox</h2>
+        <p class="title">CEO & Founder of JayWayCreates</p>
+        <p>Instagram: jaywaycreates </p>
+        <p>Email: jalacox17@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  
+
+  
+
+</body>
+</html>
