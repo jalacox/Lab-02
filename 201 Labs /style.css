@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background: #fffb00; 
+    color: #ff2600;
+    
+  }
+  
+  h1 {
+    Color: #d29d00;
+    margin-left: 40%;
+  }
+  p{
+    margin: 1%
+  }
+  grid-continer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  img{
+    border-radius: 100%;
+  }
+  
+  iframe {
+    border-radius: 100%;
+  }
