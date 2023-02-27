@@ -63,7 +63,7 @@ function myFunction() {
 
 <h3 style= >TOP 10 Things I LOVE to do in my spare time!</h3>
 
-    <ul style=> 
+    <ol style=> 
       <li>Creating art for my business</li>
       <li>Listening to music</li>
       <li>Cooking</li>
@@ -74,7 +74,65 @@ function myFunction() {
       <li>Traveling</li>
       <li>Trying new resturants</li>
       <li>Working out</li>
-    </ul>
+    </ol>
+
+    <h3>My Work and Education Experience.</h3>
+
+  <ul>
+    <li>Soulsville Charter School</li>
+    <li>Memphis College of Art</li>
+    <li>Southwest Tennessee Community College</li>
+    <li>Customer Service for multiple companies</li>
+    <li>Art and Graphics Mentor for Knowledge Quest</li>
+    <li>Code Crew (currently attending)</li>
+  </ul
+    
+  <div id="container">
+    <p><h4>Guess a number between 1 and 100</h4></p>
+    <p id="outputText">Enter a number below ↓</p>
+    <input id="userInput">
+    <button id="enterButton">Enter!</button>
+    <button id="againButton">Play again! </button>
+  </div>  
+
+  <script>
+    var enterButton = document.getElementById('enterButton');
+    var againButton = document.getElementById('againButton');
+    var output = document.getElementById('outputText');
+
+    var randomNumber = Math.ceil(Math.random()*100);
+
+    function checkNumber(){
+      var imput = document.getElementById('userInput').value;
+      if(input == randomNumber){
+        output.innerHTML="You guessed right "+ ","+ " it was "+ randomNumber;
+      }
+      else  if(input>randomNumber && input<100){
+        output.innerHTML="You guessed too high";
+      }
+      else if(input<randomNumber && input>1){
+        output.innerHTML="You guessed too high";
+      }
+      else if(input<1){
+        output.innerHTML="Higher, it has to be between 1 and 100";
+      }
+      else if(isNaN(input)){
+        output.innerHTML="That's not a number!";
+      }
+      else{
+        output.innerHTML="Lowe, it has to be between 1 and 100";
+      }
+    }
+
+    enterButton.addEventListener('click', checkNumber);
+    againButton.addEventListener('click', function(){
+      location.reload();
+    })
+  </script>
+
+  var questions = [
+  var score = 0; 
+
 
 </body>
 </html>
