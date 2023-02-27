@@ -3,8 +3,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+body, html {
+  height: 100%;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: a;
+  font-size: medium;
   margin: 0;
 }
 
@@ -12,65 +18,13 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-}
-
 .about-section {
-  padding: 50px;
+  padding: 10px;
   text-align: center;
-  background-color: #fbff00d6;
-  color: rgb(15, 15, 15);
+  background-color: #fff202;
+  color: #2a1c11eb;
 }
 
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 </style>
 </head>
 <body>
@@ -78,23 +32,36 @@ html {
 <div class="about-section">
   <h1>Welcome to Jala's World!</h1>
   <p>Hello 👋🏾 , here you will learn a little bit about me!
-    <sub> might be tested on things about me too. so read caerfully!</sub> and enjoy! 🫶🏾 
+    <sub> might be tested on things about me too. so read and look caerfully!</sub> and enjoy! 🫶🏾 
   </p>
-  <p>Hello, my name is Jala Cox I am 24 years young. I was born and raised in Memphis,TN orange mound baby! My birthday is October 2, 1998 apart of the best zodiac sign which is libra gang ♎️. I am a entrepreneur and I have art business called JayWayCreates. I customize things like Clothes, Shoes, Rugs, Wood art/cutouts/wallart, Canvas Paintings, and Murals. I also do graphic art</p>
+  <p>My name is Jala Cox and I was born and raised in Memphis,TN. My parents birth me on October 2, 1998, so you do the math. I have a passion for Art and Music, it’s something I’ve always had interest in growing up. Within my Passion I’ve dibbled and dabbled in a little bit of everything from Visual, Digital, Musical and Creative arts. After Graduating high school it was hard for me to choose a career path that I really enjoyed. I attended Memphis College of Art and took up graphic design and visual arts. Due to them closing down I took a stab at Southwest Tennessee Community College majoring in Computer Science. After that didn’t work out how I wanted I ran across Code Crew and now I’m an upcoming Software Developer/Coder at Code Crew. My main goal this go round is to use coding within my personal business being an Entrepreneur, and also land my position at Google as a Senior Computational Designer. </p>
 </div>
+
+<html>
+<body>
+
+<h3> <p>I would love to know a little about you!</p> </h3>
+
+<button onclick="myFunction()">Click Here :)</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let person = prompt("Please enter your name");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Hello 👋🏾 " + person + "! You look Beautiful today!";
+  }
+}
+</script>
+
+</body>
+</html>
 
 <h2 style="text-align:center">Quiz Time!!! 🤓🔥</h2>
 
-<button onclick="aboutjala()">Question 1</button>
-    <button onclick="aboutjala()">Question 2</button>
-    <button onclick="aboutjala()">Question 3</button>
-    <button onclick="aboutjala()">Question 4</button>
-    <button onclick="aboutjala()">Question 5</button>
-
-
-
-
-<h3 style="text-align: center;">TOP 10 Things I LOVE to do in my spare time!</h3>
+<h3 style= >TOP 10 Things I LOVE to do in my spare time!</h3>
 
     <ul style=> 
       <li>Creating art for my business</li>
@@ -108,29 +75,6 @@ html {
       <li>Trying new resturants</li>
       <li>Working out</li>
     </ul>
-
-
-
-
-
-
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <div class="container">
-        <h2>Jala Cox</h2>
-        <p class="title">CEO & Founder of JayWayCreates</p>
-        <p>Instagram: jaywaycreates </p>
-        <p>Email: jalacox17@gmail.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  
-
-  
 
 </body>
 </html>

@@ -57,3 +57,9 @@ mainElm.innerHTML = `
   </div>
 </div>
 `;
+
+<button onclick="aboutjala()">Question 1</button>
+    <button onclick="aboutjala()">Question 2</button>
+    <button onclick="aboutjala()">Question 3</button>
+    <button onclick="aboutjala()">Question 4</button>
+    <button onclick="aboutjala()">Question 5</button>
